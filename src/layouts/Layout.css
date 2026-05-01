@@ -1,0 +1,49 @@
+/* ===== Layout Styles ===== */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Main Content Area --- */
+.main {
+  flex: 1;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #131921;
+  color: #cccccc;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* --- Page Defaults --- */
+.page h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f1111;
+  margin-bottom: 12px;
+}
+
+.page p {
+  font-size: 16px;
+  color: #565959;
+  line-height: 1.6;
+}
+.main-container {
+  width: 100%;
+  padding: 20px;
+}
+.product-card {
+  width: 100%;
+  max-width: 280px;
+  margin: auto;   /* centers each card */
+}

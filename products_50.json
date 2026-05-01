@@ -1,0 +1,532 @@
+[
+  {
+    "name": "Sony WH-1000XM5 Wireless Headphones",
+    "price": 24999,
+    "original_price": 29999,
+    "category": "Electronics",
+    "rating": 4.8,
+    "reviews": 2341,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+    "description": "Industry-leading noise cancellation with premium sound quality and 30-hour battery life"
+  },
+  {
+    "name": "Apple AirPods Pro",
+    "price": 26999,
+    "original_price": 29999,
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 1856,
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500&h=500&fit=crop",
+    "description": "Active noise cancellation, spatial audio, and seamless Apple device integration"
+  },
+  {
+    "name": "Samsung 55 inch 4K UHD Smart TV",
+    "price": 45999,
+    "original_price": 64999,
+    "category": "Electronics",
+    "rating": 4.6,
+    "reviews": 3421,
+    "image": "https://images.unsplash.com/photo-1559089723-8711f87e56b6?w=500&h=500&fit=crop",
+    "description": "Crystal clear 4K resolution with HDR support and smart streaming apps built-in"
+  },
+  {
+    "name": "LG Front Load Washing Machine 8kg",
+    "price": 35999,
+    "original_price": 49999,
+    "category": "Home",
+    "rating": 4.5,
+    "reviews": 2154,
+    "image": "https://images.unsplash.com/photo-1517668808822-9ebb02ae2a0e?w=500&h=500&fit=crop",
+    "description": "Energy-efficient with AI DD technology for gentle fabric care and water conservation"
+  },
+  {
+    "name": "iPhone 15 Pro Max 256GB",
+    "price": 129999,
+    "original_price": 139999,
+    "category": "Mobiles",
+    "rating": 4.9,
+    "reviews": 5000,
+    "image": "https://images.unsplash.com/photo-1592286927505-1fed540c9da5?w=500&h=500&fit=crop",
+    "description": "Titanium design with A17 Pro chip, advanced camera system, and Dynamic Island"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 512GB",
+    "price": 139999,
+    "original_price": 154999,
+    "category": "Mobiles",
+    "rating": 4.8,
+    "reviews": 4123,
+    "image": "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&h=500&fit=crop",
+    "description": "200MP camera with AI processing, 6.8-inch display, and 24-hour battery"
+  },
+  {
+    "name": "OnePlus 12 256GB Stellar Black",
+    "price": 64999,
+    "original_price": 79999,
+    "category": "Mobiles",
+    "rating": 4.7,
+    "reviews": 3214,
+    "image": "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&h=500&fit=crop",
+    "description": "Snapdragon 8 Gen 3 processor with fast charging and fluid AMOLED display"
+  },
+  {
+    "name": "Google Pixel 8 Pro 256GB",
+    "price": 84999,
+    "original_price": 99999,
+    "category": "Mobiles",
+    "rating": 4.6,
+    "reviews": 2845,
+    "image": "https://images.unsplash.com/photo-1592286927505-1fed540c9da5?w=500&h=500&fit=crop",
+    "description": "Tensor G3 chip with exceptional computational photography and AI features"
+  },
+  {
+    "name": "Levi's Classic Blue Denim Jeans",
+    "price": 3499,
+    "original_price": 5999,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 3421,
+    "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=500&h=500&fit=crop",
+    "description": "Timeless 501 fit with premium denim quality and comfortable stretch"
+  },
+  {
+    "name": "Nike Air Max 90 Sneakers",
+    "price": 8999,
+    "original_price": 11999,
+    "category": "Fashion",
+    "rating": 4.7,
+    "reviews": 2654,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop",
+    "description": "Iconic silhouette with visible Air cushioning for all-day comfort"
+  },
+  {
+    "name": "Adidas Ultraboost 22 Running Shoes",
+    "price": 9999,
+    "original_price": 14999,
+    "category": "Fashion",
+    "rating": 4.5,
+    "reviews": 1823,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop",
+    "description": "Energy-returning Boost technology with responsive cushioning for runners"
+  },
+  {
+    "name": "Puma Casual T-Shirt Cotton",
+    "price": 999,
+    "original_price": 1799,
+    "category": "Fashion",
+    "rating": 4.4,
+    "reviews": 2156,
+    "image": "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=500&h=500&fit=crop",
+    "description": "100% pure cotton with breathable fabric perfect for everyday wear"
+  },
+  {
+    "name": "Sony Bravia X 65\" Smart TV",
+    "price": 99999,
+    "original_price": 129999,
+    "category": "Electronics",
+    "rating": 4.8,
+    "reviews": 1543,
+    "image": "https://images.unsplash.com/photo-1559089723-8711f87e56b6?w=500&h=500&fit=crop",
+    "description": "4K HDR with XR processor and built-in Google TV with voice control"
+  },
+  {
+    "name": "Canon EOS R6 Mirrorless Camera",
+    "price": 289999,
+    "original_price": 319999,
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 856,
+    "image": "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500&h=500&fit=crop",
+    "description": "Full-frame 20MP sensor with 4K video and advanced autofocus system"
+  },
+  {
+    "name": "Bosch Dishwasher 12 Place Settings",
+    "price": 42999,
+    "original_price": 58999,
+    "category": "Home",
+    "rating": 4.4,
+    "reviews": 1632,
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=500&h=500&fit=crop",
+    "description": "Quiet operation with multiple wash programs and energy-saving modes"
+  },
+  {
+    "name": "Philips Air Purifier 1000i",
+    "price": 18999,
+    "original_price": 24999,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 1245,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&h=500&fit=crop",
+    "description": "HEPA filter removes 99.97% pollutants with real-time air quality monitoring"
+  },
+  {
+    "name": "Dyson V15 Detect Cordless Vacuum",
+    "price": 64999,
+    "original_price": 79999,
+    "category": "Home",
+    "rating": 4.7,
+    "reviews": 892,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&h=500&fit=crop",
+    "description": "Laser dust detection and 60-minute runtime for deep whole-home cleaning"
+  },
+  {
+    "name": "Xiaomi Redmi Note 13 128GB",
+    "price": 16999,
+    "original_price": 21999,
+    "category": "Mobiles",
+    "rating": 4.4,
+    "reviews": 1956,
+    "image": "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&h=500&fit=crop",
+    "description": "AMOLED display with MediaTek processor and long-lasting battery"
+  },
+  {
+    "name": "Realme 12 Pro 256GB",
+    "price": 24999,
+    "original_price": 32999,
+    "category": "Mobiles",
+    "rating": 4.5,
+    "reviews": 1624,
+    "image": "https://images.unsplash.com/photo-1511707267537-b85faf00021e?w=500&h=500&fit=crop",
+    "description": "Periscope camera with 50MP sensor and 120Hz display at competitive price"
+  },
+  {
+    "name": "H&M Casual Shirt Formal",
+    "price": 1999,
+    "original_price": 3499,
+    "category": "Fashion",
+    "rating": 4.3,
+    "reviews": 987,
+    "image": "https://images.unsplash.com/photo-1556821552-7f41c5d440db?w=500&h=500&fit=crop",
+    "description": "Minimalist design with comfortable fit suitable for office and casual wear"
+  },
+  {
+    "name": "Zara Black Blazer Premium",
+    "price": 4999,
+    "original_price": 7999,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 1324,
+    "image": "https://images.unsplash.com/photo-1611811112582-a586c61ea9a7?w=500&h=500&fit=crop",
+    "description": "Tailored fit with premium wool blend for sophisticated professional look"
+  },
+  {
+    "name": "Logitech MX Master 3S Mouse",
+    "price": 8999,
+    "original_price": 11999,
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 1654,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Ergonomic wireless mouse with precision tracking and customizable buttons"
+  },
+  {
+    "name": "Razer DeathAdder V3 Gaming Mouse",
+    "price": 7999,
+    "original_price": 10999,
+    "category": "Electronics",
+    "rating": 4.6,
+    "reviews": 1345,
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+    "description": "Ultra-lightweight gaming mouse with 30000 DPI sensor"
+  },
+  {
+    "name": "Corsair K95 Platinum Keyboard",
+    "price": 19999,
+    "original_price": 26999,
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 987,
+    "image": "https://images.unsplash.com/photo-1587829191301-2d5d0c9e0c00?w=500&h=500&fit=crop",
+    "description": "Mechanical keyboard with Cherry MX switches and RGB lighting"
+  },
+  {
+    "name": "Dell Ultrasharp 27\" Monitor",
+    "price": 34999,
+    "original_price": 44999,
+    "category": "Electronics",
+    "rating": 4.6,
+    "reviews": 1123,
+    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop",
+    "description": "4K IPS display with color accuracy perfect for professionals"
+  },
+  {
+    "name": "Dell XPS 15 Laptop Core i9",
+    "price": 189999,
+    "original_price": 229999,
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 1234,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&h=500&fit=crop",
+    "description": "Premium ultrabook with 4K display and powerful processor"
+  },
+  {
+    "name": "Bedsheet 100% Cotton King Size",
+    "price": 1499,
+    "original_price": 2499,
+    "category": "Home",
+    "rating": 4.5,
+    "reviews": 3421,
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&h=500&fit=crop",
+    "description": "Soft Egyptian cotton bedsheet with deep pockets"
+  },
+  {
+    "name": "Comforter Quilt Queen Size",
+    "price": 2999,
+    "original_price": 4999,
+    "category": "Home",
+    "rating": 4.4,
+    "reviews": 2156,
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&h=500&fit=crop",
+    "description": "Lightweight microfiber comforter with hypoallergenic filling"
+  },
+  {
+    "name": "Pillow Memory Foam Set of 2",
+    "price": 1999,
+    "original_price": 3299,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&h=500&fit=crop",
+    "description": "Orthopedic memory foam pillows for neck and shoulder support"
+  },
+  {
+    "name": "Sofa Cover Elastic 3 Seater",
+    "price": 2499,
+    "original_price": 4499,
+    "category": "Home",
+    "rating": 4.5,
+    "reviews": 1654,
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9a7?w=500&h=500&fit=crop",
+    "description": "Stretchy sofa cover that protects and upgrades your furniture"
+  },
+  {
+    "name": "Dining Table Glass 6 Seater",
+    "price": 19999,
+    "original_price": 29999,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 876,
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9a7?w=500&h=500&fit=crop",
+    "description": "Modern glass dining table with sturdy metal frame"
+  },
+  {
+    "name": "Office Chair Ergonomic Mesh",
+    "price": 6999,
+    "original_price": 9999,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9a7?w=500&h=500&fit=crop",
+    "description": "Comfortable mesh chair with lumbar support for long hours"
+  },
+  {
+    "name": "Smart Bulb RGB WiFi Control",
+    "price": 999,
+    "original_price": 1499,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 1987,
+    "image": "https://images.unsplash.com/photo-1534651102737-ffad555b110b?w=500&h=500&fit=crop",
+    "description": "WiFi-enabled RGB bulb controllable from your smartphone"
+  },
+  {
+    "name": "Door Lock Smart Digital",
+    "price": 9999,
+    "original_price": 14999,
+    "category": "Home",
+    "rating": 4.7,
+    "reviews": 1456,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+    "description": "Biometric and keypad smart lock with emergency key backup"
+  },
+  {
+    "name": "Security Camera 1080p WiFi",
+    "price": 3999,
+    "original_price": 5999,
+    "category": "Electronics",
+    "rating": 4.6,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop",
+    "description": "HD WiFi camera with night vision and motion detection"
+  },
+  {
+    "name": "Power Bank 20000mAh Fast Charging",
+    "price": 1999,
+    "original_price": 3499,
+    "category": "Electronics",
+    "rating": 4.5,
+    "reviews": 2987,
+    "image": "https://images.unsplash.com/photo-1585947867372-48a3d5b8e0d0?w=500&h=500&fit=crop",
+    "description": "Compact power bank with dual USB ports and LED indicator"
+  },
+  {
+    "name": "Portable Speaker Bluetooth JBL",
+    "price": 9999,
+    "original_price": 13999,
+    "category": "Electronics",
+    "rating": 4.7,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&h=500&fit=crop",
+    "description": "Waterproof Bluetooth speaker with powerful bass and long battery"
+  },
+  {
+    "name": "Smartwatch Fitness Tracker",
+    "price": 4999,
+    "original_price": 7999,
+    "category": "Electronics",
+    "rating": 4.6,
+    "reviews": 2154,
+    "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500&h=500&fit=crop",
+    "description": "Track fitness metrics with SpO2, heart rate, and sleep monitoring"
+  },
+  {
+    "name": "iPad Pro 12.9 256GB",
+    "price": 99999,
+    "original_price": 119999,
+    "category": "Electronics",
+    "rating": 4.8,
+    "reviews": 1234,
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=500&fit=crop",
+    "description": "Premium tablet with M2 chip and ProMotion 120Hz display"
+  },
+  {
+    "name": "Phone Case Premium Leather",
+    "price": 1299,
+    "original_price": 1999,
+    "category": "Fashion",
+    "rating": 4.5,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&h=500&fit=crop",
+    "description": "Genuine leather case with protection and style"
+  },
+  {
+    "name": "Wallet Leather RFID Blocking",
+    "price": 999,
+    "original_price": 1799,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 1654,
+    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop",
+    "description": "Premium leather wallet with RFID protection and card slots"
+  },
+  {
+    "name": "Backpack Laptop 40L Travel",
+    "price": 2999,
+    "original_price": 4999,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 1987,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
+    "description": "Durable travel backpack with laptop compartment and USB charging"
+  },
+  {
+    "name": "Sunglasses UV Protection",
+    "price": 1999,
+    "original_price": 3999,
+    "category": "Fashion",
+    "rating": 4.4,
+    "reviews": 1876,
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+    "description": "Premium sunglasses with polarized lenses and UV protection"
+  },
+  {
+    "name": "Watch Analog Mechanical Classic",
+    "price": 4999,
+    "original_price": 7999,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 1345,
+    "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500&h=500&fit=crop",
+    "description": "Elegant mechanical watch with leather strap and date display"
+  },
+  {
+    "name": "Perfume 100ml Long Lasting",
+    "price": 1999,
+    "original_price": 3499,
+    "category": "Fashion",
+    "rating": 4.5,
+    "reviews": 2156,
+    "image": "https://images.unsplash.com/photo-1542294148-9f63e3f786b9?w=500&h=500&fit=crop",
+    "description": "Premium fragrance with long-lasting scent and elegant packaging"
+  },
+  {
+    "name": "Yoga Mat Non-Slip 6mm",
+    "price": 899,
+    "original_price": 1499,
+    "category": "Fashion",
+    "rating": 4.5,
+    "reviews": 1654,
+    "image": "https://images.unsplash.com/photo-1506829082519-cf8e5d2dcf43?w=500&h=500&fit=crop",
+    "description": "Comfortable non-slip yoga mat with natural rubber"
+  },
+  {
+    "name": "Dumbbells Set 20kg Hex",
+    "price": 4999,
+    "original_price": 7999,
+    "category": "Fashion",
+    "rating": 4.6,
+    "reviews": 987,
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=500&fit=crop",
+    "description": "Durable hexagonal dumbbells perfect for strength training"
+  },
+  {
+    "name": "Water Bottle Stainless Steel 1L",
+    "price": 799,
+    "original_price": 1299,
+    "category": "Fashion",
+    "rating": 4.5,
+    "reviews": 2154,
+    "image": "https://images.unsplash.com/photo-1602143407151-7e36dd070f64?w=500&h=500&fit=crop",
+    "description": "Insulated water bottle keeps drinks hot or cold for hours"
+  },
+  {
+    "name": "Sports Shoes Running Sneakers",
+    "price": 3999,
+    "original_price": 5999,
+    "category": "Fashion",
+    "rating": 4.5,
+    "reviews": 1987,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop",
+    "description": "Lightweight running shoes with cushioning for comfort and performance"
+  },
+  {
+    "name": "Bluetooth Earbuds TWS",
+    "price": 2499,
+    "original_price": 3999,
+    "category": "Electronics",
+    "rating": 4.5,
+    "reviews": 2143,
+    "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500&h=500&fit=crop",
+    "description": "True wireless earbuds with noise cancellation and fast charging"
+  },
+  {
+    "name": "Webcam 4K HD USB",
+    "price": 4999,
+    "original_price": 6999,
+    "category": "Electronics",
+    "rating": 4.4,
+    "reviews": 1234,
+    "image": "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500&h=500&fit=crop",
+    "description": "Professional 4K webcam perfect for streaming and video calls"
+  },
+  {
+    "name": "Gaming Chair Ergonomic",
+    "price": 14999,
+    "original_price": 19999,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 1654,
+    "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9a7?w=500&h=500&fit=crop",
+    "description": "High-back gaming chair with lumbar and neck support"
+  },
+  {
+    "name": "Air Fryer 5.5L",
+    "price": 6999,
+    "original_price": 9999,
+    "category": "Home",
+    "rating": 4.6,
+    "reviews": 2543,
+    "image": "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=500&h=500&fit=crop",
+    "description": "Digital air fryer with 8 preset cooking functions"
+  }
+]

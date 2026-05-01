@@ -1,0 +1,30 @@
+/* ==============================================
+   SHOP PAGE
+   ============================================== */
+
+.shop-page {
+  width: 100%;
+}
+
+/* Header */
+.shop-header {
+  background: #232f3e;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.shop-header h1 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.shop-header p {
+  color: #cccccc;
+  font-size: 16px;
+}
+
+/* Background */
+body {
+  background: #f5f5f5;
+}

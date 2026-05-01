@@ -1,0 +1,143 @@
+/* ==============================================
+   PRODUCT DETAILS PAGE (FINAL AMAZON STYLE)
+   ============================================== */
+
+.product-details {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: #ffffff;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* LEFT IMAGE */
+.details-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-left img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+}
+
+/* RIGHT CONTENT */
+.details-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TITLE */
+.details-right h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ⭐ Stars */
+.rating-stars {
+  font-size: 18px;
+  color: #de7921;
+}
+
+.review-count {
+  font-size: 14px;
+  color: #007185;
+}
+
+/* PRICE */
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.current {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.original {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.discount {
+  color: #cc0c39;
+  font-weight: 600;
+}
+
+/* DESCRIPTION */
+.description {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn-cart {
+  background: #ff9900;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-cart:hover {
+  background: #e68a00;
+}
+
+.btn-buy {
+  background: #fb641b;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-buy:hover {
+  background: #d95b00;
+}
+
+/* EXTRA INFO */
+.extra-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.extra-info div {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .details-left img {
+    max-width: 300px;
+  }
+}

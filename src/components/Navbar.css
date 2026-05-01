@@ -1,0 +1,115 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+
+  background: #131921;
+  color: white;
+}
+
+/* LEFT */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* CENTER */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cart-link {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* BADGE */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+
+  background: #ff9900;
+  color: black;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* AUTH */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-greeting {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #888;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ff9900;
+  color: #ff9900;
+}
+
+.nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-auth-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 14px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.nav-auth-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ff9900;
+  color: #ff9900;
+}
