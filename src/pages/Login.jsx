@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
+import BASE_URL from "../api";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/login/', {
+      const response = await fetch(`${BASE_URL}login/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

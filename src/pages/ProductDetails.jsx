@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import BASE_URL from "../api";
 import "./ProductDetails.css";
 
 function ProductDetails() {
@@ -8,14 +9,25 @@ function ProductDetails() {
 
   // 🔥 Fetch from API
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/products/")
+    fetch(`${BASE_URL}products/`)
       .then((res) => res.json())
       .then((data) => {
-        const found = data.find(
+        let products = [];
+
+        // ✅ handle paginated + normal response
+        if (Array.isArray(data)) {
+          products = data;
+        } else if (data && Array.isArray(data.results)) {
+          products = data.results;
+        }
+
+        const found = products.find(
           (item) => item.id === parseInt(id)
         );
+
         setProduct(found);
-      });
+      })
+      .catch((err) => console.error(err));
   }, [id]);
 
   // 🔥 Add to Cart
@@ -42,52 +54,59 @@ function ProductDetails() {
     window.location.href = "/cart";
   };
 
-  if (!product) return <h2 style={{ padding: "20px" }}>Loading...</h2>;
+  if (!product) {
+    return <h2 style={{ padding: "20px" }}>Loading...</h2>;
+  }
 
-  const discount = Math.round(
-    ((product.original_price - product.price) /
-      product.original_price) *
-      100
-  );
+  // ✅ safe discount
+  const discount = product.original_price
+    ? Math.round(
+        ((product.original_price - product.price) /
+          product.original_price) *
+          100
+      )
+    : 0;
 
   return (
     <div className="product-details">
       
       {/* LEFT IMAGE */}
       <div className="details-left">
-        <img src={product.image} alt={product.name} />
+        <img
+          src={product.image || "https://via.placeholder.com/300"}
+          alt={product.name}
+        />
       </div>
 
-      {/* RIGHT SIDE */}
+      {/* RIGHT */}
       <div className="details-right">
         <h2>{product.name}</h2>
 
-        {/* ⭐ Stars */}
+        {/* ⭐ Rating */}
         <div className="rating-stars">
-          {"★".repeat(Math.floor(product.rating))}
-          {"☆".repeat(5 - Math.floor(product.rating))}
+          {"★".repeat(Math.floor(product.rating || 0))}
+          {"☆".repeat(5 - Math.floor(product.rating || 0))}
         </div>
 
         <div className="review-count">
-          {product.reviews.toLocaleString()} reviews
+          {(product.reviews || 0).toLocaleString()} reviews
         </div>
 
         {/* 💰 Price */}
         <div className="price">
           <span className="current">₹{product.price}</span>
-          <span className="original">
-            ₹{product.original_price}
-          </span>
+          <span className="original">₹{product.original_price}</span>
           <span className="discount">{discount}% off</span>
         </div>
 
-        {/* 📄 About */}
+        {/* 📄 Description */}
         <h3>About this item</h3>
-        <p className="description">{product.description}</p>
+        <p className="description">
+          {product.description || "No description available"}
+        </p>
 
-        {/* Extra Info */}
         <p><strong>Category:</strong> {product.category || "General"}</p>
-        <p><strong>Rating:</strong> {product.rating} out of 5</p>
+        <p><strong>Rating:</strong> {product.rating || 0} / 5</p>
 
         {/* Buttons */}
         <div className="actions">
@@ -100,11 +119,11 @@ function ProductDetails() {
           </button>
         </div>
 
-        {/* 🚚 Extra Section */}
+        {/* Extra */}
         <div className="extra-info">
-          <div>🚚 <strong>Free Delivery</strong><br />On orders over ₹499</div>
-          <div>✓ <strong>Secure Payment</strong><br />100% secure transactions</div>
-          <div>↩️ <strong>Easy Returns</strong><br />30-day return policy</div>
+          <div>🚚 Free Delivery</div>
+          <div>✓ Secure Payment</div>
+          <div>↩️ Easy Returns</div>
         </div>
       </div>
     </div>

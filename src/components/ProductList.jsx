@@ -19,13 +19,22 @@ function ProductList() {
         : `${BASE_URL}products/?category=${selectedCategory}`;
 
     fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        setProducts(data);
+      .then((res) => res.json())
+      .then((data) => {
+        let finalData = [];
+
+        if (Array.isArray(data)) {
+          finalData = data;
+        } else if (data && Array.isArray(data.results)) {
+          finalData = data.results;
+        }
+
+        setProducts(finalData);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
+        setProducts([]);
         setLoading(false);
       });
   }, [selectedCategory]);
@@ -36,22 +45,20 @@ function ProductList() {
 
   return (
     <div>
-
-      {/* 🔥 CATEGORY BUTTONS */}
+      {/* Filters */}
       <div className="filter-buttons">
         {CATEGORIES.map((cat) => (
           <button
             key={cat}
             className={`filter-btn ${selectedCategory === cat ? "active" : ""}`}
             onClick={() => setSelectedCategory(cat)}
-            disabled={loading}
           >
             {cat}
           </button>
         ))}
       </div>
 
-      {/* PRODUCTS */}
+      {/* Products */}
       <div className="product-list">
         {products.length > 0 ? (
           products.map((product) => (
@@ -61,7 +68,6 @@ function ProductList() {
           <h2 style={{ padding: "20px" }}>No products found</h2>
         )}
       </div>
-
     </div>
   );
 }

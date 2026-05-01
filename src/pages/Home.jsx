@@ -1,26 +1,34 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
+import BASE_URL from "../api";
 import './Home.css';
 
 function Home() {
   const [products, setProducts] = useState([]);
 
-  // 🔥 Fetch from API
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/products/")
+    fetch(`${BASE_URL}products/`)
       .then(res => res.json())
-      .then(data => setProducts(data))
+      .then(data => {
+        let finalData = [];
+
+        if (Array.isArray(data)) {
+          finalData = data;
+        } else if (data && Array.isArray(data.results)) {
+          finalData = data.results;
+        }
+
+        setProducts(finalData);
+      })
       .catch(err => console.error(err));
   }, []);
 
-  // ✅ Take first 8 products
   const featured = products.slice(0, 8);
 
   return (
     <div className="home-page">
 
-      {/* HERO */}
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Welcome to TechHub</h1>
@@ -33,7 +41,6 @@ function Home() {
         </div>
       </section>
 
-      {/* FEATURED */}
       <section className="section">
         <div className="section-header">
           <h2 className="section-title">Featured Products</h2>
@@ -51,7 +58,6 @@ function Home() {
         </div>
       </section>
 
-      {/* CATEGORY */}
       <section className="section">
         <h2 className="section-title">Shop by Category</h2>
 
