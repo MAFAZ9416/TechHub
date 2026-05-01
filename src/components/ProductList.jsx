@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import "./ProductList.css";
+import BASE_URL from "../api";
 
 const CATEGORIES = ["All", "Electronics", "Fashion", "Mobiles", "Home"];
 
@@ -14,8 +15,8 @@ function ProductList() {
 
     const url =
       selectedCategory === "All"
-        ? "http://127.0.0.1:8000/api/products/"
-        : `http://127.0.0.1:8000/api/products/?category=${selectedCategory}`;
+        ? `${BASE_URL}products/`
+        : `${BASE_URL}products/?category=${selectedCategory}`;
 
     fetch(url)
       .then(res => res.json())
